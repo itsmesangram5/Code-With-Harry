@@ -55,19 +55,16 @@ class tape :public publication
 
 int main()
 {
-    publication *ptr;
-    publication  p ;
+    publication p;
     p.read();
     p.show();
     
     book b;
-    ptr=&b ;
-    ptr->read();
-    ptr->show();
+    b.read();
+    b.show();
     
     tape t;
-    ptr=&t ;
-    ptr->read();
-    ptr->show();
+    t.read();
+    t.show();
     
 }

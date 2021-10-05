@@ -37,53 +37,50 @@ class biodata: public personal,public academic,public professional
 };
 void personal::get_personal()
 {
- cout<<"Enter name::";
+ cout<<"Enter name ";
  cin>>name;
- cout<<"Enter Address::";
+ cout<<"\nEnter Address::";
  cin>>address;
- cout<<"Enter Birthdate(dd/mm/yyyy)::";
+ cout<<"\nEnter Birthdate(dd/mm/yyyy)::";
  cin>>birthdate;
- cout<<"Enter gender(M/F)::";
+ cout<<"\nEnter gender(M/F)::";
  cin>>gender;
 }
 void professional::get_professional()
 {
- cout<<"Enter number of years of exp::";
+ cout<<"\nEnter number of years of exp::";
  cin>>noofyearsexp;
- cout<<"Enter organization name::";
+ cout<<"\nEnter organization name::";
  cin>>orgname;
- cout<<"Enter project name::";
+ cout<<"\nEnter project name::";
  cin>>projname;
- cout<<"Enter project Details::";
+ cout<<"\nEnter project Details::";
  cin>>projdetails;
 }
 void academic::get_academic()
 {
- cout<<"Enter academic year::";
+ cout<<"\nEnter academic year::";
  cin>>year;
- cout<<"Enter total marks::";
+ cout<<"\nEnter total marks::";
  cin>>marks;
- cout<<"Enter percentage::";
+ cout<<"\nEnter percentage::";
  cin>>percentage;
- cout<<"Enter class::";
+ cout<<"\nEnter class::";
  cin>>Class;
 }
 void biodata::display()
 {
 
-     cout<<"---------------------Employee Biodata--------------"<<endl;
- cout<<"-----------------------------------------------------"<<endl;
- cout<<"____________________Personal Details__________________________"<<endl;
+ cout<<"Employee Biodata"<<endl;
+ cout<<"Personal Details"<<endl;
  cout<<"Name::"<<name<<endl;
  cout<<"address::"<<address<<endl;
  cout<<"birthdate::"<<birthdate<<endl;
  cout<<"Gender::"<<gender<<endl;
- cout<<"--------------------------------------------------"<<endl;
- cout<<"________________Academic Details________________________"<<endl;
+ cout<<"\nAcademic Details"<<endl;
  cout<<"Academic Year "<<"marks "<<"percentage "<<"class "<<endl;
  cout<<year<<"\t\t0"<<marks<<"\t"<<percentage<<"\t"<<Class<<endl;
- cout<<"-------------------------------------------------------"<<endl;
- cout<<"_______________Professional Details____________________"<<endl;
+ cout<<"Professional Details"<<endl;
  cout<<"\nOrganization Name::"<<orgname;
  cout<<"\nYears of Experince::"<<noofyearsexp;
  cout<<"\nProject Done::"<<projname;
@@ -93,7 +90,7 @@ int main()
 {
  biodata b;
  b.get_personal();
- b.get_academic();
  b.get_professional();
+ b.get_academic();
  b.display();
 }
