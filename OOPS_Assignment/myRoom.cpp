@@ -8,7 +8,7 @@ class Hotelroom
 public:
     float room_profit(int a, int b)
     {
-        return ((a * 50) + (b * 100));
+        return ((a*50)+(b*100));
     }
 };
 class Hotelapartment : public Hotelroom
@@ -19,7 +19,7 @@ class Hotelapartment : public Hotelroom
 public:
     float apartment_profit(int c, int d)
     {
-        return ((c * 50) + (d * 100) + 100);
+        return ((c*50)+(d*100)+100);
     }
 };
 float getdata()
@@ -30,12 +30,13 @@ float getdata()
     if (s == "standard")
     {
         Hotelroom p;
-        return p.room_profit(bedrooms, bathrooms);
+        return p.room_profit(bedrooms,bathrooms) ;
+
     }
     if (s == "apartment")
     {
         Hotelapartment q;
-        return q.apartment_profit(bedrooms, bathrooms);
+        return q.apartment_profit(bedrooms,bathrooms);
     }
     else
     {
@@ -45,13 +46,13 @@ float getdata()
 }
 int main()
 {
-    int n, total_profit = 0;
-    cin >> n;
+    int n , total_profit=0;
+    cin>>n;
     for (int i = 0; i < n; i++)
     {
-        float q = getdata();
-        total_profit = total_profit + q;
+        float q=getdata();
+        total_profit=total_profit+ q;
     }
-    cout << total_profit;
+    cout<<total_profit;
     return 0;
 }
